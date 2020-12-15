@@ -69,14 +69,13 @@
   <ItemGroup>
     <Compile Include="BaseTest.cs" />
     <Compile Include="DocumentGenerators\CpfTest.cs" />
+    <Compile Include="DocumentsValidations\CpfTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DocumentsValidations\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DotNet.Utils\DotNet.Utils.csproj">
       <Project>{3adf6f47-9f92-4628-b06c-0c2f4a7b1bcc}</Project>

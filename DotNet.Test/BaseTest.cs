@@ -8,7 +8,7 @@ namespace DotNet.Test
     public class BaseTest
     {
         [TestMethod]
-        public dynamic AsyncOperation(Func<string> func)
+        public dynamic AsyncOperation(Func<dynamic> func)
         {
             try
             {
