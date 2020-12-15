@@ -1,4 +1,4 @@
-﻿namespace DotNet.Utils.DocumentValidations
+﻿namespace DotNet.Utils.DocumentsValidators
 {
     public class Cpf
     {

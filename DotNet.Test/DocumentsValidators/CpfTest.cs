@@ -2,12 +2,12 @@
 using System;
 using System.Threading.Tasks;
 
-namespace DotNet.Test.DocumentValidations
+namespace DotNet.Test.DocumentsValidators
 {
     [TestClass]
     public class CpfTest : BaseTest
     {
-        private readonly Utils.DocumentValidations.Cpf cpfValidator = new Utils.DocumentValidations.Cpf();
+        private readonly Utils.DocumentsValidators.Cpf cpfValidator = new Utils.DocumentsValidators.Cpf();
         private readonly Utils.DocumentGenerators.Cpf cpfGenerator = new Utils.DocumentGenerators.Cpf();
 
         [TestMethod]

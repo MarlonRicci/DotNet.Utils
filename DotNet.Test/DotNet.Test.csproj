@@ -69,7 +69,7 @@
   <ItemGroup>
     <Compile Include="BaseTest.cs" />
     <Compile Include="DocumentGenerators\CpfTest.cs" />
-    <Compile Include="DocumentsValidations\CpfTest.cs" />
+    <Compile Include="DocumentsValidators\CpfTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

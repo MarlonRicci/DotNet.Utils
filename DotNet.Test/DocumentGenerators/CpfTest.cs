@@ -1,5 +1,4 @@
-﻿using DotNet.Utils.DocumentGenerators;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Threading.Tasks;
 
@@ -8,7 +7,8 @@ namespace DotNet.Test.DocumentGenerators
     [TestClass]
     public class CpfTest : BaseTest
     {
-        private readonly Cpf cpfGenerator = new Cpf();
+        private readonly Utils.DocumentGenerators.Cpf cpfGenerator = new Utils.DocumentGenerators.Cpf();
+        private readonly Utils.DocumentsValidators.Cpf cpfValidator = new Utils.DocumentsValidators.Cpf();
 
         [TestMethod]
         public void Generate()
@@ -18,6 +18,7 @@ namespace DotNet.Test.DocumentGenerators
             string presentation = response.ToString();
 
             Assert.IsNotNull(presentation);
+            Assert.IsTrue(cpfValidator.Validate(presentation));
 
             Console.WriteLine(presentation);
         }
