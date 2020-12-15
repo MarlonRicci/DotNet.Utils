@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DocumentGenerators\Cpf.cs" />
+    <Compile Include="DocumentsValidators\Cnpj.cs" />
     <Compile Include="DocumentsValidators\Cpf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
